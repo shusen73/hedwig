@@ -1,1 +1,3 @@
-# A web app to generate and download QR Code.
+# Hedwig
+
+A web app to generate and download QR Code.

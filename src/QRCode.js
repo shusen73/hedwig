@@ -12,22 +12,17 @@ S.Container = styled.div`
 `;
 
 function QRCode(props) {
-  const [text, setText] = useState(props.text || "https://www.shusen.dev");
+  const defaultText = "https://www.shusen.dev";
   const [data, setData] = useState();
-  console.log(text);
 
   useEffect(() => {
     (async () => {
-      const dataURl = await QRCodeGenerator.toDataURL(text);
+      const dataURl = await QRCodeGenerator.toDataURL(
+        props.text || defaultText
+      );
       setData(dataURl);
       props.setDataUrl(dataURl);
     })();
-  }, [text]);
-
-  useEffect(() => {
-    if (props.text) {
-      setText(props.text);
-    }
   }, [props]);
 
   return (

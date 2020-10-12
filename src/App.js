@@ -11,8 +11,10 @@ const S = {};
 S.OuterContainer = styled.div`
   min-height: 100vh;
   height: 100vh;
-  padding: 2rem 2rem;
   margin: 0rem auto;
+  @media (min-width: 500px) {
+    padding: 2rem 2rem;
+  }
 `;
 S.InnerContainer = styled.div`
   display: grid;

@@ -1,7 +1,7 @@
 
 ## Description
 
-A QRCode generator [link](https://fireplace.app.shusen.dev)<br/>
+A QRCode generator [link](https://hedwig.app.shusen.dev)<br/>
 
 ## Build With
 - React.js

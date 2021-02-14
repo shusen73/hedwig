@@ -10,6 +10,7 @@ import GlobalStyles from "./globalStyle.js";
 const S = {};
 S.OuterContainer = styled.div`
   min-height: 100vh;
+  max-height: 100vh;
   height: 100vh;
   margin: 0rem auto;
   @media (min-width: 500px) {
